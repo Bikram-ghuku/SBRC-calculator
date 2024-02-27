@@ -21,6 +21,7 @@ window.onload = () => {
             }else{
                 res = all.slice(0, all.length - 1)
             }
+            disp.value = math.evaluate(res)
             console.log(res, math.evaluate(res))
         }else{
             all+=val;
