@@ -23,6 +23,16 @@ window.onload = () => {
             }
             disp.value = math.evaluate(res)
             console.log(res, math.evaluate(res))
+        }else if(val=='CE'){
+            disp.value = ""
+            curr = curr.slice(0, curr.length - 1)
+            disp.value = curr
+            all = all.slice(0, all.length - 1)
+        }else if(val == 'AC'){
+            disp.value = ""
+            arr = []
+            all =""
+            curr =""
         }else{
             all+=val;
             arr.push(curr)
