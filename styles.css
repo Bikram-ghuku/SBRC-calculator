@@ -28,14 +28,28 @@ button:hover{
     background-color: #1a202c9c;
 }
 
-input{
-    padding-left: 1rem;
+.calc-disp{
+    display: flex;
+    flex-direction: column;
+    resize: none;
+    padding: 1rem;
     border-radius: 2rem;
     margin-bottom: 1rem;
     background-color: #1a202c;
     color: white;
     border: 0;
     margin-left: 0.25rem;
-    height: 3.5rem;
+    height: 5rem;
     width: 100%;
+}
+
+textarea{
+    height: 3.5rem;
+}
+
+textarea, input{
+    resize: none;
+    border: 0;
+    color: white;
+    background: none;
 }
