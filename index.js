@@ -1,12 +1,13 @@
 window.onload = () => {
     var button = document.getElementsByTagName("button")
     var disp = document.getElementById("display")
+    var histDisp = document.getElementsByTagName("textarea")[0]
     var curr = ""
     var arr = []
     var all = ""
 
     function process(val){
-        if((val >= 0 && val <=9) || val == '.'){
+        if((val >= 0 && val <=9) || val == '.' || !isNaN(parseFloat(val))){
             all+=val;
             disp.value = ""
             console.log("Number")
@@ -21,8 +22,10 @@ window.onload = () => {
             }else{
                 res = all.slice(0, all.length - 1)
             }
-            disp.value = math.evaluate(res)
-            console.log(res, math.evaluate(res))
+            var ans = math.evaluate(res)
+            disp.value = ans
+            console.log(res, ans)
+            document.getElementById("ans").value = ans;
         }else if(val=='CE'){
             disp.value = ""
             curr = curr.slice(0, curr.length - 1)
@@ -40,6 +43,12 @@ window.onload = () => {
             disp.value = ""
             arr.push(val)
             console.log("Operator")
+        }
+
+
+        histDisp.innerHTML = ""
+        for(var i = 0; i < arr.length; i++){
+            histDisp.innerHTML+=(" "+arr[i])
         }
         
     }
