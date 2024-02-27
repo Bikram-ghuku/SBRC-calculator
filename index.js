@@ -26,7 +26,6 @@ window.onload = () => {
             var ans = math.evaluate(res)
             disp.value = ans
             console.log(res, ans)
-            document.getElementById("ans").value = ans;
             arr.push("=")
             arr.push(ans)
             arr.push('\n')
