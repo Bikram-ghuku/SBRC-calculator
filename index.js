@@ -14,6 +14,7 @@ window.onload = () => {
             curr+=val;
             disp.value = curr;
         }else if(val == '='){
+            arr.push(curr)
             console.log(arr)
             var lsEle = all.charAt(all.length - 1)
             var res;
@@ -26,6 +27,11 @@ window.onload = () => {
             disp.value = ans
             console.log(res, ans)
             document.getElementById("ans").value = ans;
+            arr.push("=")
+            arr.push(ans)
+            arr.push('\n')
+            all=ans
+            curr=ans
         }else if(val=='CE'){
             disp.value = ""
             curr = curr.slice(0, curr.length - 1)
@@ -41,6 +47,7 @@ window.onload = () => {
             arr.push(curr)
             curr=""
             disp.value = ""
+            disp.value = val
             arr.push(val)
             console.log("Operator")
         }
