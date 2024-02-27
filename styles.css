@@ -53,3 +53,7 @@ textarea, input{
     color: white;
     background: none;
 }
+
+::-webkit-scrollbar {
+    width: 2rem;
+}
