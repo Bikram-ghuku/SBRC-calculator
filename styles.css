@@ -21,6 +21,7 @@ button{
     background-color: #1a202c;
     border-radius: 50%;
     font-size: larger;
+    font-weight: 800;
 }
 
 button:hover{
@@ -28,9 +29,11 @@ button:hover{
 }
 
 input{
+    padding-left: 1rem;
     border-radius: 2rem;
     margin-bottom: 1rem;
     background-color: #1a202c;
+    color: white;
     border: 0;
     margin-left: 0.25rem;
     height: 3.5rem;
