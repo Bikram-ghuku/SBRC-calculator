@@ -6,10 +6,12 @@
     <title>Calculator</title>
     <link rel="stylesheet" href="styles.css">
     <script src="./index.js" type="text/javascript"></script>
+    <script src="https://cdn.jsdelivr.net/npm/mathjs@12.4.0/lib/browser/math.min.js"></script>
 </head>
 <body>
     <div class="calc-body">
         <div class="calc-disp">
+            <textarea ></textarea>
             <input type="text" value="Enter numbers to continue..." readonly id="display">
         </div>
         <div class="calc-row1 calc-row">
@@ -35,6 +37,10 @@
             <button value="0">0</button>
             <button value="=">=</button>
             <button value="+">+</button>
+        </div>
+        <div class="calc-row5 calc-row">
+            <button value="AC">AC</button>
+            <button value="CE">CE</button>
         </div>
     </div>
 </body>
