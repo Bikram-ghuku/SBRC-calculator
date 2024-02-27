@@ -1,0 +1,38 @@
+body{
+    padding: 0;
+    margin: 0;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+    background-color: #2f3142;
+}
+
+button{
+    border: 0;
+    background-color: green;
+    color: white;
+    width: 5rem;
+    height: 5rem;
+    margin-top: 0.25rem;
+    margin-left: 0.25rem;
+    background-color: #1a202c;
+    border-radius: 50%;
+    font-size: larger;
+}
+
+button:hover{
+    background-color: #1a202c9c;
+}
+
+input{
+    border-radius: 2rem;
+    margin-bottom: 1rem;
+    background-color: #1a202c;
+    border: 0;
+    margin-left: 0.25rem;
+    height: 3.5rem;
+    width: 100%;
+}
